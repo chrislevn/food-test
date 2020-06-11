@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import { Switch, Route } from "react-router-dom";
 import classes from "./App.css";
 import Navbar from "./components/Navigation/Navbar/Navbar";
@@ -12,17 +12,18 @@ import Cart from "./components/Cart/Cart";
 import Modal from "./components/Modal/Modal";
 import Bottom from "./components/Bottom/Bottom";
 
-class App extends Component {
-  state = {
+const App = props => {
+  const [state, setState] = useState({
     sideDrawerOpen: false
-  };
-  drawerToggleClickHandler = () => {
+  });
+
+  const drawerToggleClickHandler = () => {
     this.setState(prevState => {
       return { sideDrawerOpen: !prevState.sideDrawerOpen };
     });
   };
 
-  backdropClickHandler = () => {
+  const backdropClickHandler = () => {
     this.setState({ sideDrawerOpen: false });
   };
 
