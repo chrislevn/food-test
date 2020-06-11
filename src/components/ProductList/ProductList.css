@@ -1,0 +1,33 @@
+.PageContainer{
+    margin:3rem;
+}
+@media only screen and (max-width:450px){
+    .PageContainer{
+      margin:0.2rem;
+    }
+  }
+.ProductContainer{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 0rem;
+    justify-items: center;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.DirectoryBox {
+  position: absolute;
+  width: 100%;
+  height: 3%;
+  top: 60px;
+  left: 0;
+  background-color: rgb(207, 202, 202);
+}
+
+.DirectoryTextBox {
+  margin-left: 13rem;
+}
+
+.EmptyBox {
+  height: 40px;
+}

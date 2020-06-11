@@ -1,0 +1,45 @@
+.Container {
+    margin: 5rem 2rem 2rem 2rem;
+    background-color: #ffffff;
+    height: 100%;
+  }
+
+  .LeftContainer {
+    float: left;
+  }
+
+  .RightContainer {
+    float: right;
+    margin-left: 0.3rem;
+    background-color: white;
+  }
+
+  .BottomContainer {
+    background-color: #faeded;
+  }
+
+  .DirectoryTextBox {
+    background: #faeded;
+  }
+
+  .DeliveryText {
+    color: grey;
+    margin-top: 0rem;
+    margin-bottom: -1.2rem;
+    margin-left: 2rem;
+
+  }
+
+  .NextDeliveryText {
+    color: black;
+    margin-left: 2rem;
+  }
+
+  .Delivery {
+    background-color: white;
+  }
+  @media only screen and (max-width:569px){
+    .Container{
+      margin: 5rem 0 0 0;
+    }
+  }

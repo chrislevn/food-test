@@ -1,0 +1,26 @@
+.NavigationItems {
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  float: right;
+  margin-right: 10rem;
+}
+
+.headerTitle {
+  color: white;
+  float: right;
+  font-size: smaller;
+}
+
+
+.Cart{
+    width: 50px; 
+    align-items: right;
+    color:white;
+}
+@media (max-width: 768px) {
+  .NavigationItems li:not(:last-child){
+    display: none;
+  }
+}
